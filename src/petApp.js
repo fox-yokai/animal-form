@@ -136,8 +136,8 @@ class Pet extends Component {
         return (
             <div>
                 {this.state.isClientPage ? clientComp : null}
-                {this.state.isDogPage ? this.DogPage() : null}
-                {this.state.isCatPage ? this.CatPage() : null}
+                {this.state.isDogPage ? this.dogPage() : null}
+                {this.state.isCatPage ? this.catPage() : null}
             </div>
         );
 
