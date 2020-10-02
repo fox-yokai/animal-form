@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Col, Row, Jumbotron, From, Button, Form } from 'react-bootstrap';
 import DogForm from './components/dogForm';
 import CatForm from './components/catForm';
+import Intro from './components/intro';
 
 class Pet extends Component {
 
@@ -56,8 +57,7 @@ class Pet extends Component {
                     <Col md={{span: 7, offset: 3}}>
                         <Jumbotron>
                         <h1>New Client/Patient Form</h1>
-                            <p>Are you or your pet new to React? Please fill out this simple form with as much of your information as you can provide, and it will be sent directly to us in preparation for your first appointment. 
-                            </p>
+                            <Intro />
                             <Form>
                                 <Form.Group>
                                     <h2>Owner Information</h2>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Col, Row, Jumbotron, Form, Button } from 'react-bootstrap';
-import Logo from '../images/dog-logo.jpg';
+import Intro from '../components/intro';
 
 class DogForm extends Component {
 
@@ -56,9 +56,7 @@ class DogForm extends Component {
                 <Row>
                     <Col md={{span: 7, offset: 3}}>
                         <Jumbotron>
-                            <img width={100} src={Logo} alt="dog logo" />
-                            <p>Are you or your pet new to React? Please fill out this simple form with as much of your information as you can provide, and it will be sent directly to us in preparation for your first appointment.    
-                            </p>
+                            <Intro />
                             <Form onSubmit={this.handleSubmit}>
                                 <Form.Group>
                                     <h2>Dog Information</h2>
